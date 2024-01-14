@@ -52,8 +52,8 @@ const beCheerful = (num) => {
 
 const multiples = (start, stop, multiple, skip) => {
 
-    for (let i = start; i <= stop; i >= 0 ? i++ : i--) {
-        if (i % multiple === 0 && i !== skip.includes(i)) {
+    for (let i = start; i <= stop; start > stop ? i-- : i++) {
+        if (i % multiple === 0 && !skip.includes(i)) {
             console.log(i);
         }
     }
