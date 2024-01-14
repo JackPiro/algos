@@ -35,6 +35,14 @@ const printRange = (start, stop) => {
 //Don’t Worry, Be Happy
 //Create beCheerful(). Within it, console.log string "good morning!" Call it 98 times.
 
-const beCheerful = () => {
-
+const beCheerful = (num) => {
+    if (num >= 1 && num % 1 === 0) {
+        for (let i = 0; i <= num - 1; i++) {
+            console.log("good morning")
+        }
+    } else {
+        console.log("number must be an integer greater than zero")
+    }
 }
+
+beCheerful(2);
