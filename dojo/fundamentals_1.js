@@ -45,4 +45,18 @@ const beCheerful = (num) => {
     }
 }
 
-beCheerful(2);
+// beCheerful(2);
+
+//Multiples of Three – but Not All
+//Using FOR, print multiples of 3 from -300 to 0. Skip -3 and -6.
+
+const multiples = (start, stop, multiple, skip) => {
+
+    for (let i = start; i <= stop; i >= 0 ? i++ : i--) {
+        if (i % multiple === 0 && i !== skip.includes(i)) {
+            console.log(i);
+        }
+    }
+}
+
+multiples(-300, 0, 3, [-3, -6])
