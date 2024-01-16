@@ -66,9 +66,15 @@ multiples(-300, 0, 3, [-3, -6])
 //Print integers from 2000 to 5280, using a WHILE.
 
 const print = (start, stop) => {
-    let i = start
+    let i = start;
     if (start < stop) {
-        console.log(i++)
+        while(i < stop) {
+            console.log(i++)
+        }
+    } else {
+        while(i > stop) {
+            console.log(i--)
+        }
     }
 }
 
