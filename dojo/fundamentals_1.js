@@ -59,24 +59,41 @@ const multiples = (start, stop, multiple, skip) => {
     }
 }
 
-multiples(-300, 0, 3, [-3, -6])
+// multiples(-300, 0, 3, [-3, -6])
 
 
 //Printing Integers with While
 //Print integers from 2000 to 5280, using a WHILE.
 
-const print = (start, stop) => {
+const printWhile = (start, stop) => {
     let i = start;
-    if (start < stop) {
-        while(i < stop) {
+    if (start < stop && start % 1 === 0 && stop % 1 === 0 && start !== stop) {
+        while(i <= stop) {
             console.log(i++)
         }
     } else {
-        while(i > stop) {
+        while(i >= stop) {
             console.log(i--)
         }
     }
 }
 
+// printWhile(200, 215)
 
+//You Say It’s Your Birthday
+//If 2 given numbers represent your birth month and day in either order, log "How did you know?", else log "Just another day...." 
+
+const birthDay = (dayOrMonth, monthOrDay) => {
+    if (dayOrMonth && monthOrDay <= 31 && dayOrMonth && monthOrDay > 0) {
+        if ((dayOrMonth === 6 && monthOrDay === 17) || (dayOrMonth === 17 && monthOrDay === 6)) {
+            console.log('how did you know?')
+        } else {
+            console.log('Just another day....')
+        }
+    } else {
+        console.log('invalid entry')
+    }
+}
+
+birthDay(17, 6)
 
