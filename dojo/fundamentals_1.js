@@ -60,16 +60,6 @@ const multiples = (start, stop, multiple, skip) => {
 }
 
 // multiples(-300, 0, 3, [-3, -6])
-
-
-
-
-
-
-
-
-
-
 //Printing Integers with While
 //Print integers from 2000 to 5280, using a WHILE.
 
@@ -105,7 +95,7 @@ const birthDay = (dayOrMonth, monthOrDay) => {
     }
 }
 
-birthDay(17, 6)
+// birthDay(17, 6)
 
 
 //Leap Year
@@ -122,5 +112,19 @@ const leapYear = (year) => {
 
 // leapYear()
 
+//Countdown
+//Create a function that accepts a number as an input. 
+//Return a new array that counts down by one, from the number (as array’s ‘zeroth’ element) down to 0 (as the last element). How long is this array?
 
 
+const countdown = (num) => {
+    arr = [];
+    arr.push(num)
+    for(i = num; i <= 0 ? i++ : i--;) {
+        arr.push(i);
+    }
+    console.log(arr.length)
+    console.log(arr)
+}
+
+countdown();
