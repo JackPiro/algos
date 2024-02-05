@@ -7,7 +7,7 @@ As always, do this without using built-in functions.
 */
 
 const minToFront = () => {
-
+    
 }
 
 

@@ -18,6 +18,10 @@ const setSwap = (var1, var2) => {
 //Print -52 to 1066
 //Print integers from -52 to 1066 using a FOR loop.
 
+
+
+
+
 const printRange = (start, stop) => {
     if(start < stop) {
         for (let i = start; i <= stop; i++) {
@@ -116,7 +120,6 @@ const leapYear = (year) => {
 //Create a function that accepts a number as an input. 
 //Return a new array that counts down by one, from the number (as array’s ‘zeroth’ element) down to 0 (as the last element). How long is this array?
 
-
 const countdown = (num) => {
     arr = [];
     arr.push(num)
@@ -128,3 +131,6 @@ const countdown = (num) => {
 }
 
 countdown();
+
+
+
