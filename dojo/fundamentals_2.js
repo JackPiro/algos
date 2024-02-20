@@ -68,7 +68,7 @@ const valuesGreaterTwo = (arr) => {
     let holder = []
     if (arr.length >= 2) {
         for( let i = 0; i < arr.length; i++) {
-            arr[i] > arr[2] ? holder.push[arr[i]] : console.log(`${arr[i]} is less than ${arr[2]}`)
+            arr[i] > arr[2] ? holder.push(arr[i]) : console.log(`${arr[i]} is less than ${arr[2]}`)
         }
         console.log(holder)
         return(holder)
@@ -76,3 +76,21 @@ const valuesGreaterTwo = (arr) => {
         console.log("array must be at least 2 indecies")
     }
 }
+
+// valuesGreaterTwo(arr)
+
+//This Length, That Value
+//Given two numbers, return array of length num1 with each value num2.Print "Jinx!" if they are same.
+
+const thisLengthThatValue = (num1, num2) => {
+    let holder = []
+    for(let i = 0; i < num1; i++) {
+        holder.push(num2)
+    }
+    console.log(holder)
+    if(num1 === num2) {
+        console.log("Jinx!")
+    }
+}
+
+thisLengthThatValue(5, 5)
