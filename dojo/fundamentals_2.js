@@ -56,7 +56,23 @@ const valuesGreaterThanSecond = (arr) => {
     console.log(holder.length)
 }
 
-valuesGreaterThanSecond(arr)
+// valuesGreaterThanSecond(arr)
 
 
 
+//Values Greater than Second, Generalized
+//Write a function that accepts any array, and returns a new array with the array values that are greater
+//than its 2nd value.Print how many values this is.What will you do if the array is only one element long ?
+
+const valuesGreaterTwo = (arr) => {
+    let holder = []
+    if (arr.length >= 2) {
+        for( let i = 0; i < arr.length; i++) {
+            arr[i] > arr[2] ? holder.push[arr[i]] : console.log(`${arr[i]} is less than ${arr[2]}`)
+        }
+        console.log(holder)
+        return(holder)
+    } else {
+        console.log("array must be at least 2 indecies")
+    }
+}
