@@ -19,27 +19,6 @@ const setSwap = (var1, var2) => {
 //Print integers from -52 to 1066 using a FOR loop.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const printRange = (start, stop) => {
     if(start < stop) {
         for (let i = start; i <= stop; i++) {
