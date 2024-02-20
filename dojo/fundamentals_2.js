@@ -57,3 +57,6 @@ const valuesGreaterThanSecond = (arr) => {
 }
 
 valuesGreaterThanSecond(arr)
+
+
+
