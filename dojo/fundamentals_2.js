@@ -93,4 +93,36 @@ const thisLengthThatValue = (num1, num2) => {
     }
 }
 
-thisLengthThatValue(5, 5)
+// thisLengthThatValue(5, 5)
+
+//Fit the First Value
+//Your function should accept an array.If value at[0] is greater than array’s length, print "Too big!";
+//if value at[0] is less than array’s length, print "Too small!"; otherwise print "Just right!".
+
+const fitTheFirstValue = (arr) => {
+    if (arr[0] === arr.length) {
+        console.log("just right")
+    } else if (arr[0] > arr.length) {
+        console.log("too big")
+    } else {
+        console.log("too small")
+    }
+}
+
+// fitTheFirstValue(arr)
+
+//Fahrenheit to Celsius
+//Kelvin wants to convert between temperature scales.Create fahrenheitToCelsius(fDegrees)
+//that accepts a number of degrees in Fahrenheit, and returns the equivalent temperature as expressed
+//    in Celsius degrees.For review, Fahrenheit = (9 / 5 * Celsius) + 32.
+
+const fahrenheitToCelsius = (fDegrees) => {
+    celsius = ((fDegrees - 32) * 5 / 9 )
+    console.log(celsius)
+}
+
+
+
+
+
+// fahrenheitToCelsius(32)
