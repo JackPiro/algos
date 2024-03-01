@@ -4,7 +4,7 @@ positive numbers in the array to “big”.Example:
 makeItBig([-1, 3, 5, -5]) returns that same
 array, changed to[-1, "big", "big", -5].*/
 
-let arr = [-1, 3, 5, -5, 2, 2, 2]
+let arr = [1,2,3,4,5,6]
 
 const biggieSize = (arr) => {
     for (let i = 0; i < arr.length; i++) {
@@ -138,13 +138,83 @@ previous array index – and return the array. */
 
 arrayStrings = ['gib', 'big', 'seven', 'worf']
 
-const previousLengths = (arr) => {
+// const previousLengths = (arr) => {
+//     let holder = 0
+//     let prev = 0
+//     for (let i = 1 ; i < arr.length; i++) {
+//         arr[i] = arr[i - 1].length
+//     }
+//     console.log(arr)
+// }
+
+// previousLengths(arrayStrings)
+
+
+
+
+/*  Add Seven to Most
+Build function that accepts array. Return a new
+array with all values except first, adding 7 to
+each. Do not alter the original array. */
+
+const sevenToMost = (arr) => {
+    let holder = []
+    for( let i = 0; i < arr.length; i++) {
+        if (arr[i] !== arr[0]) {
+            holder.push(arr[i] + 7)
+        }
+        console.log(holder)
+    }
+}
+
+// sevenToMost(arr)
+
+/* Reverse Array
+Given array, write a function to reverse values,
+in-place. Example: reverse([3,1,6,4,2])
+returns same array, containing [2,4,6,1,3]. */
+
+const reverseArray = (arr) => {
+    let holder = []
+    for ( let i = arr.length - 1; i < arr.length && i > 0; i-- ) {
+        holder.push(arr[i])
+    }
+    for (let i = 0; i < holder.length; i ++) {
+        arr[i] = holder[i]
+    }
+}
+
+const reverseArrayTwo = (arr) => {
+    let start = 0
+    let end = arr.length - 1
     let holder = 0
-    let prev = 0
-    for (let i = 1 ; i < arr.length; i++) {
-        arr[i] = arr[i - 1].length
+    while ( start < end ) {
+        holder = arr[start]
+        arr[start] = arr[end]
+        arr[end] = holder
+        start++
+        end--
     }
     console.log(arr)
 }
 
-previousLengths(arrayStrings)
+
+// reverseArrayTwo(arr)
+
+/* Outlook: Negative
+Given an array, create and return a new one
+containing all the values of the provided array,
+made negative (not simply multiplied by -1).
+Given [1,-3,5], return [-1,-3,-5]. */
+
+const outlookNegative = (arr) => {
+    let holder = []
+    for (let i = 0; i < arr.length; i++ ) {
+        if (arr[i] > 0) {
+            holder.push(arr[i] * - 1)
+        }
+    }
+    console.log(holder)
+}
+
+// outlookNegative(arr)

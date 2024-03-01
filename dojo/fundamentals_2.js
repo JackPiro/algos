@@ -126,7 +126,4 @@ const fahrenheitToCelsius = (fDegrees) => {
 }
 
 
-
-
-
 // fahrenheitToCelsius(32)
