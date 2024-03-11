@@ -26,6 +26,10 @@ const factorial = (num) => {
     console.log(holder)
 }
 
+
+
+
+
 // factorial(5)
 
 /* Star Art
