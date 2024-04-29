@@ -15,3 +15,5 @@ const onlyTheLastFew = (arr, num) => {
 }
 
 onlyTheLastFew(array, 3)
+
+
