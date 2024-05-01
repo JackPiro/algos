@@ -77,4 +77,26 @@ const alwaysHungry = (arr) => {
     }
 }
 
-alwaysHungry(array)
+// alwaysHungry(array)
+
+
+/*
+ Add Seven to Most
+Build function that accepts array. Return a new
+array with all values except first, adding 7 to
+each. Do not alter the original array.
+*/
+
+const mostToSeven = (arr) => {
+    newArr = []
+    for (let i = 1; i < arr.length; i++) {
+        let holder
+        holder = arr[i] + 7
+        newArr.push(holder)
+    }
+    console.log(newArr)
+    console.log("hoorayy!!")
+    return newArr
+}
+
+mostToSeven(array)
