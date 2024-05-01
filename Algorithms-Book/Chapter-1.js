@@ -53,3 +53,6 @@ const bogdan2 = (iq, days, increment) => {
 
 bogdan2(101, 98, 0.01)
 
+
+
+
