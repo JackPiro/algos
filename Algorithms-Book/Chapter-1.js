@@ -2,7 +2,7 @@
 by that amount. Given array arr and number X, remove all except the last X elements, and return arr
 (changed and shorter). Given ([2,4,6,8,10],3), change the given array to [6,8,10] and return it. */
 
-let array = [7,12,5,9,0,0,0]
+let array = [7,12,5,9,0,0]
 
 const onlyTheLastFew = (arr, num) => {
     let newArr = []
@@ -14,7 +14,7 @@ const onlyTheLastFew = (arr, num) => {
     console.log(arr)
 }
 
-onlyTheLastFew(array, 3)
+// onlyTheLastFew(array, 3)
 
 
 /* Soaring IQ
@@ -51,8 +51,30 @@ const bogdan2 = (iq, days, increment) => {
     console.log(finalIQ)
 }
 
-bogdan2(101, 98, 0.01)
+// bogdan2(101, 98, 0.01)
 
 
 
 
+/*
+ Always Hungry
+Create a function that accepts an array, and
+prints "yummy" each time one of the values is
+equal to "food". If no array elements are
+"food", then print "I'm hungry" once.
+*/ 
+
+const alwaysHungry = (arr) => {
+    foods = 0
+    for (let i = 0; i < arr.length; i ++) {
+        if (arr[i] === 'food') {
+            foods++
+            console.log('yummy...')
+        }
+    }
+    if (foods === 0) {
+        console.log("I'm Hungry")
+    }
+}
+
+alwaysHungry(array)
